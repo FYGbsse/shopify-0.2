@@ -17,7 +17,7 @@
     {%- endunless -%}
 
     <title>
-      {{ page_title  this is from main}}
+      {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
@@ -211,7 +211,6 @@
   </head>
 
   <body class="gradient">
-  <h1>This is from main </h1>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
